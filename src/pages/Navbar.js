@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
 const NavBar = () => {
@@ -22,7 +22,7 @@ const NavBar = () => {
 				<span className='icon-bar'></span>
 				<span className='icon-bar'></span>
 			</button>
-			// Only show the menu if isNavVisible === true
+			{/* // Only show the menu if isNavVisible === true */}
 			{isNavVisible && (
 				<div id='navbar-menu' aria-labelledby='navbar-toggle'>
 					<ul className='navbar-links'>

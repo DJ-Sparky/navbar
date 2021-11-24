@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import NavBar from './Navbar';
 // styles
 const pageStyles = {
 	color: '#232129',
@@ -129,6 +129,7 @@ const links = [
 const IndexPage = () => {
 	return (
 		<main style={pageStyles}>
+			<NavBar />
 			<title>Home Page</title>
 			<h1 style={headingStyles}>
 				Congratulations
