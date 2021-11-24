@@ -6,17 +6,18 @@ const NavBar = () => {
 	const [isNavVisible, toggleNavVisibility] = useState(false);
 
 	return (
-		<nav class='navbar-container container'>
-			<Link href='/' class='home-link'>
+		<nav id="navbar" className='navbar-container container'>
+			<Link to='/' className='home-link'>
 				Website Name
 			</Link>
 			<button
-				type='button'
+        type="button"
+				role="button"
 				id='navbar-toggle'
 				aria-controls='navbar-menu'
 				aria-label='Toggle menu'
 				aria-expanded={isNavVisible}
-				onClick={(e) => toggleNavVisibility()}
+				onClick={e=>{toggleNavVisibility(!isNavVisible);console.log('blerk')}}
 			>
 				<span className='icon-bar'></span>
 				<span className='icon-bar'></span>
@@ -27,22 +28,22 @@ const NavBar = () => {
 				<div id='navbar-menu' aria-labelledby='navbar-toggle'>
 					<ul className='navbar-links'>
 						<li className='navbar-item'>
-							<Link className='navbar-link' href='/about'>
+							<Link className='navbar-link' to='/about'>
 								About
 							</Link>
 						</li>
 						<li className='navbar-item'>
-							<Link className='navbar-link' href='/blog'>
+							<Link className='navbar-link' to='/blog'>
 								Blog
 							</Link>
 						</li>
 						<li className='navbar-item'>
-							<Link className='navbar-link' href='/careers'>
+							<Link className='navbar-link' to='/careers'>
 								Careers
 							</Link>
 						</li>
 						<li className='navbar-item'>
-							<Link className='navbar-link' href='/contact'>
+							<Link className='navbar-link' to='/contact'>
 								Contact
 							</Link>
 						</li>
