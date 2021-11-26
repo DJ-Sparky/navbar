@@ -12,13 +12,13 @@ const headingStyles = {
 	maxWidth: 320,
 };
 
-const IndexPage = () => {
+const CareersPage = () => {
 	return (
 		<main style={pageStyles}>
-			<title>Home Page</title>
-			<h1 style={headingStyles}>Home</h1>
+			<title>Careers Page</title>
+			<h1 style={headingStyles}>Careers</h1>
 		</main>
 	);
 };
 
-export default IndexPage;
+export default CareersPage;
